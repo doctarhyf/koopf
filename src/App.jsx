@@ -18,7 +18,7 @@ export default function App() {
   return (
     <BrowserRouter >
       <Routes>
-        <Route path="/" element={<Home />}>
+        <Route path="/" element={loggedInUser ? <Home /> : <Login />}>
           <Route index element={<Home />} />
         
         </Route>
