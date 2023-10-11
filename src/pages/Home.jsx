@@ -18,6 +18,7 @@ export default function Home({}) {
   return (
     <div className="">
       <div className="w-72">KOOPF final ...</div>
+      <Button>Cool</Button>
     </div>
   );
 }

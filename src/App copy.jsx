@@ -16,11 +16,13 @@ export default function App() {
   }, []);
 
   return (
-    <BrowserRouter >
+    <BrowserRouter basename="koopf">
       <Routes>
-        <Route path="/" element={<Home />}>
+        <Route path="/" element={loggedInUser ? <Layout /> : <Login />}>
           <Route index element={<Home />} />
-        
+          {/* <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
         </Route>
         <Route path="/login" element={<Login />} />
       </Routes>

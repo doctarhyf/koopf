@@ -1,3 +1,10 @@
+import { Button } from "@material-tailwind/react";
+
 export default function Login({}) {
-  return <div>Login</div>;
+  return <div>
+
+
+<Button >Login</Button>
+
+  </div>;
 }
