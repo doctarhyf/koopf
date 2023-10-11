@@ -8,6 +8,7 @@ import {
  
 export default function Login() {
   return (
+    <div className="p-4 mx-auto w-fit">
     <Card color="transparent" shadow={false}>
       <Typography variant="h4" color="blue-gray">
         Sign Up
@@ -50,5 +51,6 @@ export default function Login() {
         </Typography>
       </form>
     </Card>
+    </div>
   );
 }
