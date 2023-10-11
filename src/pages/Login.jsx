@@ -7,9 +7,17 @@ import {
 } from "@material-tailwind/react";
  
 export default function Login() {
+
+function onReg(e){
+  console.log(e);
+}
+
   return (
     <div className="p-4 mx-auto w-fit">
     <Card color="transparent" shadow={false}>
+      <Typography variant='h1' color='green'  >
+        KOOP
+      </Typography>
       <Typography variant="h4" color="blue-gray">
         Sign Up
       </Typography>
@@ -40,7 +48,7 @@ export default function Login() {
           }
           containerProps={{ className: "-ml-2.5" }}
         />
-        <Button className="mt-6" fullWidth>
+        <Button onClick={onReg} className="mt-6" fullWidth>
           Register
         </Button>
         <Typography color="gray" className="mt-4 text-center font-normal">
